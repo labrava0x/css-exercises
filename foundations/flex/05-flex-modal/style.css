@@ -9,7 +9,6 @@ body {
   margin: 0;
   background: #aaa;
   color: #333;
-  /* I'll give you this one for free lol */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,6 +19,16 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px; /* Padding around the edge of the modal */
+}
+
+.top-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .icon {
@@ -33,6 +42,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0; /* Prevents the icon from getting squished */
+}
+
+.header {
+  font-weight: bold;
+  font-size: 18px; /* Slightly larger text-size than the body text */
+  flex: 1; /* Pushes close button to the right */
 }
 
 .close-button {
@@ -48,12 +64,29 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  cursor: pointer;
+  flex-shrink: 0; /* Prevents the close button from getting squished */
+}
+
+.text {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+  padding-left: 58px; /* Aligns text neatly with the header (icon width 42px + gap 16px) */
+}
+
+.actions-container {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end; /* Pushes action buttons to the right side */
 }
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
 }
 
 button.continue {

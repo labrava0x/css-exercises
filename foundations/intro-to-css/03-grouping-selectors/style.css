@@ -1,1 +1,18 @@
 /* Add CSS Styling */
+/* Grouped selector for shared styles */
+.first-button,
+.second-button {
+  font-size: 28px;
+  font-family: Helvetica, "Times New Roman", sans-serif;
+}
+
+/* Unique style for the first element */
+.first-button {
+  background-color: black;
+  color: white;
+}
+
+/* Unique style for the second element */
+.second-button {
+  background-color: yellow;
+}

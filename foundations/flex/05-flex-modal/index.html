@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="modal">
-      <div class="icon">!</div>
-      <div class="header">Are you sure you want to do that?</div>
-      <button class="close-button">✖</button>
-      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
-      <button class="continue">Continue</button>
-      <button class="cancel">Cancel</button>
+      
+      <!-- Top row: Icon, Header, and Close Button -->
+      <div class="top-container">
+        <div class="icon">!</div>
+        <div class="header">Are you sure you want to do that?</div>
+        <button class="close-button">✖</button>
+      </div>
+
+      <!-- Middle row: Main text -->
+      <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatur excepturi id soluta, numquam ap...
+      </div>
+
+      <!-- Bottom row: Action buttons -->
+      <div class="actions-container">
+        <button class="button continue">Continue</button>
+        <button class="button cancel">Cancel</button>
+      </div>
+
     </div>
   </body>
 </html>

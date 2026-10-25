@@ -7,14 +7,25 @@ body {
   width: 400px;
   background: white;
   margin: 16px auto;
+  padding: 8px; /* space between white border and blue sections */
 }
 
 .title,
 .content,
 .button-container {
   background: dodgerblue;
+  padding: 8px; /* inner spacing for blue boxes */
+  margin-bottom: 8px; /* gap between sections */
+}
+
+/* Remove bottom margin from the last container so it doesn't leave an extra gap */
+.button-container {
+  margin-bottom: 0;
+  text-align: center; /* centers the button inside */
 }
 
 button {
   background: white;
+  border: none;
+  padding: 8px 24px; /* gives the button its shape */
 }

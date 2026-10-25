@@ -12,6 +12,22 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+/* If you grouped your left and right items into wrapper divs or lists: */
+.left-container,
+.right-container,
+ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .profile-image {
@@ -41,8 +57,4 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
-}
-
-ul {
-  list-style-type: none;
 }
